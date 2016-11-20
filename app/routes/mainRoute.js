@@ -1,8 +1,10 @@
 module.exports = function(app) {
     // Routes
     var userRoute = require('./user');
-    var sensorRoute = require('./sensor');
+    var sensorAguaRoute = require('./sensorAgua');
+    var sensorTierraRoute = require('./sensorTierra');
 
     userRoute(app);
-    sensorRoute(app);
+    sensorAguaRoute(app);
+    sensorTierraRoute(app);
 };

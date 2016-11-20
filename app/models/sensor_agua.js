@@ -1,11 +1,12 @@
 var restful = require('node-restful');
 var mongoose = require('mongoose');
 
-var Sensor = mongoose.Schema({
+var SensorAgua = mongoose.Schema({
     ph: 'number',
     conductividad: 'number',
     solidos_disueltos: 'number',
-    salinidad: 'number'
+    salinidad: 'number',
+    temperatura: 'number'
 });
 
-module.exports = restful.model('Sensor', Sensor);
+module.exports = restful.model('SensorAgua', SensorAgua);
